@@ -2,7 +2,7 @@
 
 1. Pour deployer Angular ( Sous Apache, Nginx ... ) il faut faire quelques modifications : 
    --> Dans le index.html : 
-    * Commenter <base href="/">
+    * Commenter  < base href="/" >
     * La modifier par : <script>document.write('<base href="' + document.location + '" />');</script>
     
    --> Et dans le app-routing.module.ts : 
@@ -38,7 +38,8 @@ public class Application extends SpringBootServletInitializer{
 
 
   --> Dans le pom.xml il faut le modifier avec : 
-  	<packaging>war</packaging> et <start-class>org.catsid.Application</start-class>
+  	<packaging>war</packaging> , <start-class>org.catsid.Application</start-class> et ajouter la dépendance de 
+	spring-boot-starter-tomcat
   
   <groupId>org.sid</groupId>
 	<artifactId>MyCatalogue</artifactId>
@@ -63,3 +64,10 @@ public class Application extends SpringBootServletInitializer{
 	</properties>
 
 	<dependencies>
+	<!-- marked the embedded servlet container as provided -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-tomcat</artifactId>
+		<scope>provided</scope>
+	</dependency>
+	</dependencies>
