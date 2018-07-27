@@ -2,7 +2,7 @@
 
 1. Pour deployer Angular ( Sous Apache, Nginx ... ) il faut faire quelques modifications : 
    --> Dans le index.html : 
-    * Commenter <!--<base href="/">-->
+    * Commenter <base href="/">
     * La modifier par : <script>document.write('<base href="' + document.location + '" />');</script>
     
    --> Et dans le app-routing.module.ts : 
