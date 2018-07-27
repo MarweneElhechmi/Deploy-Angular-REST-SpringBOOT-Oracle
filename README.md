@@ -75,5 +75,6 @@ public class Application extends SpringBootServletInitializer{
   --> Enfin Clique droit sur le projet à deployer : 
    	Run As > Run Configuration > Name : génération WAR  > Goals : clean package
 	
+	( Voir l'image dnas le TAB ISSUES )  
 
 3. Mettre le war de Spring boot sous apache dans le dossier " webapps " et le dist de angular sous " html " de nginx ou sous " webapps " sous apache .
