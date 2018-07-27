@@ -17,6 +17,9 @@
 })
 export class AppRoutingModule {}
 
+  --> Dans la console faire : ng build --prod
+
+
 2. Pour deployer Spring boot ( Sous Apache ) il faut faire quelques modifications : 
 
   --> Dans la classe main ( Application.java ) il faut ajouter 
